@@ -33,7 +33,7 @@ class Emp
         System.out.printf("%-25s%-11.2f\n", "Dearness Allowance", da);
         System.out.printf("%-25s%-11.2f\n", "Staff Club Fund", scf);
         System.out.println("\nGross Salary: " + gross + "\nNet Salary: " + (gross - pf) + "\n");
-        System.out.println("*******************************************************\n");
+        System.out.println("*******************************************************");
     }
 }
 
@@ -102,10 +102,10 @@ public class PaySlip
 	{
         Scanner inp = new Scanner(System.in);			
         
-        System.out.println("$$$ PAYSLIP GENERATOR $$$\n");
+        System.out.println("$$$ PAYSLIP GENERATOR $$$");
         while (true)
         {
-            System.out.print("Select any designation:\n1 - Programmer\n2 - Assistant Professor\n3 - Associate Professor\n4 - Professor\n5 - Exit...\n\nYour Choice: ");
+            System.out.print("\nSelect any designation:\n1 - Programmer\n2 - Assistant Professor\n3 - Associate Professor\n4 - Professor\n5 - Exit...\n\nYour Choice: ");
 
             switch(inp.nextInt())
             {
@@ -131,7 +131,9 @@ public class PaySlip
                 break;
             case 5:
                 System.out.println("Successfully exited!");
-	        	System.exit(0);	
+	        	System.exit(0);
+	        default:
+	        	System.out.println("Invalid Choice!!");
             }
         }
 	}
