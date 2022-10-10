@@ -26,13 +26,13 @@ class Emp
         gross = bp + da + scf + hra;
         
         System.out.println("*********************** PAYSLIP ***********************");
-        System.out.println("\nName: " + name + "\nID: " + id + "\nE-mail: " + email + "\nAddress: " + address + "\nPhone: " + phone);
+        System.out.printf("\n%-7s: %s\n%-7s: %d\n%-7s: %s\n%-7s: %s\n%-7s: %s", "Name", name, "ID", id, "E-mail", email, "Address", address, "Phone", phone);
         System.out.printf("\n\n%-25s%-11s%-25s%-11s\n", "EARNINGS", "AMOUNT", "DEDUCTIONS", "AMOUNT");
         System.out.printf("%-25s%-11.2f%-25s%-11.2f\n", "Basic Pay", bp, "Provident Fund", pf);
         System.out.printf("%-25s%-11.2f\n", "House Rent Allowance", hra);
         System.out.printf("%-25s%-11.2f\n", "Dearness Allowance", da);
         System.out.printf("%-25s%-11.2f\n", "Staff Club Fund", scf);
-        System.out.println("\nGross Salary: " + gross + "\nNet Salary: " + (gross - pf) + "\n");
+        System.out.printf("\n%-12s: %.2f\n%-12s: %.2f\n\n", "Gross Salary", gross, "Net Salary", gross - pf);
         System.out.println("*******************************************************");
     }
 }
