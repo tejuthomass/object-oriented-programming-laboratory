@@ -41,7 +41,6 @@ public class Stack {
 			stack[top] = inp.nextInt();
 			System.out.println(stack[top] + " has been successfully pushed into stack!");
 		}
-//		inp.close();
 	}
 	
 	public static void pop()
